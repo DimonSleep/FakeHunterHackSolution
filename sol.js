@@ -34,7 +34,8 @@
             Promise.all([
                 fetchSourceFromNewsAPI('ro'),
                 fetchSourceFromNewsAPI('en'),
-                fetchSourceFromNewsAPI('ru')
+                fetchSourceFromNewsAPI('ru'),
+                fetchSourceFromNewsAPI('md')
             ]).then(results => {
                 const foundSource = results.find(result => result !== null);
 
